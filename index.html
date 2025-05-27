@@ -7,6 +7,8 @@
   
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Gg font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=shopping_cart" />
 </head>
 <style>
   /* Custom Styles */
@@ -51,12 +53,24 @@
     height: 70vh;
     object-fit: cover;
   }
+
+
+  /* Gg font */
+  .material-symbols-outlined {
+    width: 40px;
+    height: 22px;
+  }
+
+  .sp-card{
+    
+    object-fit: cover;
+  }
 </style>
 <body>
 
   <!-- Header -->
-  <header class="bg-light py-3 shadow-sm">
-    <div class="container">
+  <header class="bg-light px-3">
+    <div class="container-fuild">
       <div class="row align-items-center">
   
         <!-- Logo -->
@@ -81,11 +95,13 @@
   
         <!-- Search and Buttons -->
         <div class="col-md-3 d-flex justify-content-center justify-content-md-end align-items-center">
-          <input type="search" class="form-control mr-2" placeholder="Search" style="max-width: 150px;">
+          <input type="search" class="form-control mr-2" placeholder="Search" style="width: 200px;">
           <a class="btn btn-outline-primary btn-sm mx-1">Login</a>
           <a class="btn btn-primary btn-sm mx-1">Signin</a>
+          <a class="btn btn-primary btn-sm mx-1 d-flex align-items-center justify-content-center">
+            <span class="material-symbols-outlined">shopping_cart</span>
+          </a>
         </div>
-  
       </div>
     </div>
   </header>
@@ -199,14 +215,98 @@
     </div>
   </section>
 
-<!-- Ưu Đãi Nổi Bật -->
-<section class="promotions py-5">
+<!-- SẢN PHẨM NỔI BẬT -->
+<section>
+  <h2 class="text-center mb-5">SẢN PHẨM NỔI BẬT</h2>
   <div class="container">
+    <div class="row row-cols-5 text-center">
 
-    <h2 class="mb-5 text-center">Ưu Đãi Nổi Bật</h2>
+      <div class="col">
+        <div class="card border-0">
+          <img src="./source/images/shoes.png" class="card-img-top sp-card" alt="card-img-top">
+          <div class="card-body">
+            <div class="card-title">
+              100.000 VND
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="col">
+        <div class="card border-0">
+          <img src="./source/images/shoes.png" class="card-img-top sp-card" alt="card-img-top">
+          <div class="card-body">
+            <div class="card-title">
+              100.000 VND
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card border-0">
+          <img src="./source/images/shoes.png" class="card-img-top sp-card" alt="card-img-top">
+          <div class="card-body">
+            <div class="card-title">
+              100.000 VND
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card border-0">
+          <img src="./source/images/shoes.png" class="card-img-top sp-card" alt="card-img-top">
+          <div class="card-body">
+            <div class="card-title">
+              100.000 VND
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card border-0">
+          <img src="./source/images/shoes.png" class="card-img-top sp-card" alt="card-img-top">
+          <div class="card-body">
+            <div class="card-title">
+              100.000 VND
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card border-0">
+          <img src="./source/images/shoes.png" class="card-img-top sp-card" alt="card-img-top">
+          <div class="card-body">
+            <div class="card-title">
+              100.000 VND
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card border-0">
+          <img src="./source/images/shoes.png" class="card-img-top sp-card" alt="card-img-top">
+          <div class="card-body">
+            <div class="card-title">
+              100.000 VND
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- ƯU ĐÃI NỔI BẬT-->
+<section class="promotions py-5">
+  <h2 class="text-center">ƯU ĐÃI NỔI BẬT</h2>
+  <div class="container">
     <div class="row">
-
       <!-- Card 1: Ưu Đãi Mùa Hè -->
       <div class="col-md-4 mb-4">
         <div class="card h-100">
@@ -254,10 +354,11 @@
   </div>
 </section>
 
-<!---->
+<!-- PHƯƠNG THỨC THANH TOÁN -->
 <section class="part part-a text-center">
+  <h2 class="text-center">PHƯƠNG THỨC THANH TOÁN</h2>
   <div class="container">
-    <h2 class="mb-5">PHƯƠNG THỨC THANH TOÁN</h2>
+    
     <div class="row">
       <div class="col-md-4">
         <h3>1</h3>
@@ -278,19 +379,38 @@
   </div>
 </section>
 
-  <!---->
+  <!-- CÁI GÌ ĐÓ -->
   <section class="part part-b text-center">
+    <h2 class="mb-4">Sẵn sàng để trải nghiệm chứ?</h2>
     <div class="container">
-      <h2 class="mb-4">Sẵn sàng để trải nghiệm chứ?</h2>
       <p class="mb-4">Hãy tạo tài khoản miễn phí của bạn ngay và bắt đầu khám phá các dịch vụ của chúng tôi.</p>
       <button class="btn btn-lg btn-primary">Tạo Tài Khoản</button>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="text-center">
+  <footer>
+    <p class="text-center">&copy; 2025 MEO DI GIAY. All rights reserved.</p>
+    
     <div class="container">
-      <p>&copy; 2025 MEO DI GIAY. All rights reserved.</p>
+        <div class="row">
+            <div class="col-md-4">
+                <h5>CỬA HÀNG GIÀY DÉP XUẤT KHẨU</h5>
+                <p>Đkkd: Khu Chung Cư HH Bán Đảo Linh Đàm, Hoàng Mai, Hà Nội.</p>
+                <p>Địa chỉ: Khu Chung Cư HH Bán Đảo Linh Đàm, Hoàng Mai, Hà Nội.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Liên hệ</h5>
+                <p>Hotline: <a href="#" class="text-white">0865 755 233 (Zalo)</a></p>
+                <p>Website: <a href="#" class="text-white">meodigiay.com</a></p>
+            </div>
+            <div class="col-md-4">
+                <h5>Theo dõi chúng tôi</h5>
+                <a href="#" class="text-white mx-2"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-zalo"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
     </div>
   </footer>
 
